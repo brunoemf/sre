@@ -12,7 +12,7 @@ s3 = Aws::S3::Resource.new(region: region)
 
 
 # Bucket para onde serão enviados os logs
-bucket_name = 'sre-inloco'
+bucket_name = 'bfigueiroa'
 
 # Coleta todos os arquivos de Log dentro do diretório padrão do Nginx
 logs = Dir.glob('/var/log/nginx/*.*')
