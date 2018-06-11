@@ -4,7 +4,7 @@ require 'digest/md5'
 
 #Define as credenciais de acesso ao S3.
 Aws.config.update({
-   credentials: Aws::Credentials.new('AKIAJEFRSJ333LR7GXAA', 'jaHeRck8naVza+v9RJUUoTlopOAUFAXJ4YjeC1fP')
+   credentials: Aws::Credentials.new('AKIAJMLMV25KHDUF4S3A', 'tCj/tCgVrCDTBZsERdAv84QPhTDnujmwv5A0fScu')
 })
 
 region = 'us-east-1'
@@ -12,7 +12,7 @@ s3 = Aws::S3::Resource.new(region: region)
 
 
 # Bucket para onde serão enviados os logs
-bucket_name = 'bfigueiroa'
+bucket_name = 'sre-inloco'
 
 # Coleta todos os arquivos de Log dentro do diretório padrão do Nginx
 logs = Dir.glob('/var/log/nginx/*.*')
